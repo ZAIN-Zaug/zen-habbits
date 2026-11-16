@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "871513965676",
+    "project_id": "zen-habits-ea5de",
+    "storage_bucket": "zen-habits-ea5de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871513965676:android:ade4473af8524c56278449",
+        "android_client_info": {
+          "package_name": "com.example.zen_habits_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFswVEQlryUTRpEeCeZQvFNitCshSVPsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

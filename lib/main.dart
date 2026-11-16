@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zen_habits_app/views/get_started/get_started.dart';
-import 'package:zen_habits_app/views/sign_Up/sign_up.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:zen_habits_app/firebase_options.dart';
 
-
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const ZenHabits());
 }
-
 
 class ZenHabits extends StatelessWidget {
   const ZenHabits({super.key});
@@ -19,15 +22,7 @@ class ZenHabits extends StatelessWidget {
       designSize: const Size(390, 884),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: GetStarted(),
-      ),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: GetStarted()),
     );
   }
 }
-
-
-
-
-
